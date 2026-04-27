@@ -1,0 +1,103 @@
+.project-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  animation: fadeIn var(--transition-normal) ease-out;
+}
+
+.pi-hero {
+  text-align: center;
+  max-width: 600px;
+  margin-bottom: 3rem;
+}
+
+.pi-hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.pi-hero-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.pi-form-card {
+  width: 100%;
+  max-width: 540px;
+  padding: 2rem;
+}
+
+.pi-tabs {
+  display: flex;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.pi-tab {
+  flex: 1;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  color: var(--text-muted);
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  border-bottom: 2px solid transparent;
+}
+
+.pi-tab:hover {
+  color: var(--text-primary);
+}
+
+.pi-tab.active {
+  color: var(--text-primary);
+  border-bottom-color: var(--accent-primary);
+}
+
+.pi-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.pi-label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.pi-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.pi-input-icon {
+  position: absolute;
+  left: 1rem;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.pi-input-wrapper .input-field {
+  padding-left: 2.5rem;
+  padding-right: 1rem;
+  height: 3rem;
+  font-size: 1rem;
+}
+
+.pi-submit-btn {
+  width: 100%;
+  height: 3rem;
+  justify-content: center;
+}
